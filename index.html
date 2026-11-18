@@ -4,83 +4,231 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>تحميل تطبيق أرنبي</title>
+<meta name="theme-color" content="#1b5e20">
+<title>أرنبي | إدارة مزارع الأرانب</title>
+
 <style>
-  body {
-    font-family: Tahoma, Arial, sans-serif;
-    background:#f4f7f6;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    min-height:100vh;
-    margin:0;
-    padding:20px;
-  }
-  .card {
-    background:#fff;
-    border-radius:20px;
-    padding:40px 30px;
-    max-width:400px;
-    width:100%;
-    text-align:center;
-    box-shadow:0 10px 30px rgba(0,0,0,0.08);
-  }
-  .icon {
-    width:100px;
-    height:100px;
-    background:#e8f5e9;
-    border-radius:24px;
-    margin:0 auto 20px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-size:48px;
-  }
-  h1 {
-    font-size:24px;
-    color:#1a1a1a;
-    margin:0 0 10px;
-  }
-  p {
-    font-size:15px;
-    color:#666;
-    line-height:1.6;
-    margin:0 0 25px;
-  }
-  .btn {
-    display:block;
-    background:#2e7d32;
-    color:#fff;
-    text-decoration:none;
-    padding:16px;
-    border-radius:12px;
-    font-size:18px;
-    font-weight:bold;
-    transition:0.2s;
-  }
-  .btn:hover {
-    background:#1b5e20;
-  }
-  .note {
-    font-size:12px;
-    color:#999;
-    margin-top:20px;
-  }
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Tahoma, Arial, sans-serif;
+  background: #f2f8f3;
+  margin: 0;
+  color: #243528;
+}
+
+header {
+  background: linear-gradient(135deg,#1b5e20,#43a047);
+  color: white;
+  text-align: center;
+  padding: 45px 20px 55px;
+  border-radius: 0 0 35px 35px;
+}
+
+.logo {
+  width: 95px;
+  height: 95px;
+  background: white;
+  border-radius: 25px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 55px;
+  box-shadow: 0 5px 20px #0002;
+}
+
+header h1 {
+  font-size: 34px;
+  margin: 18px 0 8px;
+}
+
+header p {
+  font-size: 16px;
+  margin: 0;
+  opacity: .95;
+}
+
+.container {
+  max-width: 480px;
+  margin: -25px auto 0;
+  padding: 0 18px 35px;
+}
+
+.card {
+  background: white;
+  padding: 25px 20px;
+  border-radius: 22px;
+  box-shadow: 0 8px 25px #0000000b;
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+.card h2 {
+  color: #1b5e20;
+  font-size: 22px;
+  margin: 5px 0 12px;
+}
+
+.description {
+  color: #68756a;
+  line-height: 1.9;
+  font-size: 15px;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.feature {
+  background: #f0f7f0;
+  border-radius: 15px;
+  padding: 17px 8px;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.feature span {
+  display: block;
+  font-size: 28px;
+  margin-bottom: 7px;
+}
+
+.download {
+  display: block;
+  background: #2e7d32;
+  color: white;
+  text-decoration: none;
+  padding: 17px;
+  border-radius: 14px;
+  font-size: 19px;
+  font-weight: bold;
+  margin-top: 20px;
+  box-shadow: 0 5px 15px #2e7d3240;
+}
+
+.download:active {
+  transform: scale(.98);
+}
+
+.share {
+  display: block;
+  background: #e8f5e9;
+  color: #1b5e20;
+  text-decoration: none;
+  padding: 15px;
+  border-radius: 13px;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 12px;
+}
+
+.note {
+  color: #999;
+  font-size: 12px;
+  line-height: 1.8;
+  margin-top: 17px;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  color: #879187;
+  font-size: 12px;
+}
 </style>
 </head>
-<body>
-  <div class="card">
-    <div class="icon">🐇</div>
-    <h1>تطبيق أرنبي</h1>
-    <p>حمّل تطبيق أرنبي الآن لإدارة مزرعة الأرانب ومتابعة الأمهات والولادات والإنتاج بكل سهولة.</p>
 
-    <a href="https://raw.githubusercontent.com/mohamedtottiarfa-sudo/Arnaby.app/main/%D8%A3%D8%B1%D9%86%D8%A8%D9%8A.apk"
-       class="btn"
+<body>
+
+<header>
+  <div class="logo">🐇</div>
+  <h1>أرنبي</h1>
+  <p>إدارة مزارع الأرانب بطريقة أذكى وأسهل</p>
+</header>
+
+<div class="container">
+
+  <div class="card">
+    <h2>مرحباً بك في أرنبي</h2>
+    <div class="description">
+      تطبيق يساعدك على تنظيم وإدارة مزرعة الأرانب،
+      ومتابعة الأمهات والولادات والإنتاج
+      والاهتمام بمزرعتك بكل سهولة.
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>مميزات التطبيق</h2>
+
+    <div class="features">
+      <div class="feature">
+        <span>🐇</span>
+        إدارة الأمهات
+      </div>
+
+      <div class="feature">
+        <span>🐣</span>
+        متابعة الولادات
+      </div>
+
+      <div class="feature">
+        <span>💉</span>
+        سجل العلاج والتلقيحات
+      </div>
+
+      <div class="feature">
+        <span>📊</span>
+        متابعة الإنتاج
+      </div>
+
+      <div class="feature">
+        <span>📅</span>
+        تنظيم المواعيد
+      </div>
+
+      <div class="feature">
+        <span>💰</span>
+        حسابات المزرعة
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>حمّل أرنبي الآن</h2>
+
+    <div class="description">
+      ابدأ تنظيم مزرعتك واستمتع بتجربة إدارة أسهل.
+    </div>
+
+    <a class="download"
+       href="https://raw.githubusercontent.com/mohamedtottiarfa-sudo/Arnaby.app/main/%D8%A3%D8%B1%D9%86%D8%A8%D9%8A.apk"
        download>
-       تحميل تطبيق أرنبي
+       ⬇ تحميل تطبيق أرنبي
     </a>
 
-    <div class="note">متوافق مع أجهزة أندرويد</div>
+    <a class="share"
+       href="https://wa.me/?text=%D8%AD%D9%85%D9%84%20%D8%AA%D8%B7%D8%A8%D9%8A%D9%82%20%D8%A3%D8%B1%D9%86%D8%A8%D9%8A%20%D9%84%D8%A5%D8%AF%D8%A7%D8%B1%D8%A9%20%D9%85%D8%B2%D8%A7%D8%B1%D8%B9%20%D8%A7%D9%84%D8%A3%D8%B1%D8%A7%D9%86%D8%A8%20https%3A%2F%2Fmohamedtottiarfa-sudo.github.io%2FArnaby.app%2F"
+       target="_blank">
+       مشاركة أرنبي على واتساب
+    </a>
+
+    <div class="note">
+      متوافق مع أجهزة أندرويد<br>
+      يتم تنزيل التطبيق بصيغة APK
+    </div>
   </div>
+
+</div>
+
+<footer>
+  أرنبي 🐇 | رفيقك في إدارة مزرعتك
+</footer>
+
 </body>
 </html>
